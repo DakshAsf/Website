@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sticky Header */
+#header {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+#header nav ul li {
+  margin-right: 20px;
+}
+
+#header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#header nav ul li a:hover {
+  color: #D3D3D3; /* Light gray on hover */
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#darkModeToggle:hover {
+  color: #D3D3D3; /* Light gray on hover */
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #D3D3D3;
+  color: #000;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode #header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode #header nav ul li a {
+  color: #fff;
+}
+
+body.dark-mode #header nav ul li a:hover {
+  color: #D3D3D3;
+}
+
+body.dark-mode #scrollToTopBtn {
+  background-color: #fff;
+  color: #000;
+}
